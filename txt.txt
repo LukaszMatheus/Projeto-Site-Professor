@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contato Jefferson</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="navbar"><a href="index.html">
+                        <img src="img/IFPR-logo.png" alt="" width="70px">
+                    </a>
+                    <div class="links">
+                        <a href="producoes.html">Produções Científicas</a>
+                        <a href="disciplinas.html">Disciplinas</a>
+                        <a href="contato.html ">Contato</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <h1>Produções Científicas Prof. Jefferson</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <div class="card-producao">
+                    <img src="img/torta-na-cara.png" alt="">
+                    <h2>Torta na cara</h2>
+                    <p>O jogo com Arduino é uma prática educativa interativa e divertida!</p>
+                    <a href="torta.html" class="botao-card">Saber Mais</a>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card-producao">
+                    <img src="img/gincana-torta.png" alt="">
+                    <h2>Gincana</h2>
+                    <p>Projeto Gincana é um projeto para execução em sala de aula.</p>
+                    <a href="gincana.html" class="botao-card">Saber Mais</a>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card-producao">
+                    <img src="img/celula-connect.png" alt="">
+                    <h2>Célula </h2>
+                    <p>Aprenda sobre células jogando. Divirta-se em sala de aula.</p>
+                    <a href="celula.html" class="botao-card">Saber Mais</a>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card-producao">
+                    <img src="img/amazonia-jogo.png" alt="">
+                    <h2>Amazônia</h2>
+                    <p>Produto educacional sobre dilemas socioambientais na Amazônia.</p>
+                    <a href="amazonia.html" class="botao-card">Saber Mais</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

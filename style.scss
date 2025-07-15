@@ -1,0 +1,207 @@
+$fonte-padrao: 16px;
+$fonte-titulo: 32px;
+$fonte-subtitulo: 24px;
+
+$cor-primaria: #003366;
+$cor-secundaria: #8D8FA6;
+$cor-terciaria: #AC85A2;
+$cor-neutra: #FFFFFF;
+$cor-fundo: #f4f6f9;
+$cor-texto: #333333;
+
+$total-colunas: 12;
+$container: 1200px;
+$gutter: 20px;
+
+@for $i from 1 through $total-colunas {
+    .col-#{$i} {
+        box-sizing: border-box;
+        padding: 0 ($gutter / 2);
+        width: (100% / $total-colunas) * $i;
+    }
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: $fonte-padrao;
+    line-height: 1.7;
+    background-color: $cor-fundo;
+    color: $cor-texto;
+    margin: 0;
+}
+
+h1 {
+    color: $cor-primaria;
+    font-size: $fonte-titulo;
+}
+
+h2 {
+    color: $cor-primaria;
+    font-size: $fonte-subtitulo;
+}
+
+
+
+
+.container {
+    max-width: $container;
+    margin: 0 auto;
+    gap: 20px;
+    box-sizing: border-box;
+    border: 1px black solid;
+    border-radius: 5px;
+    background-color: $cor-neutra;
+    overflow: hidden;
+}
+
+.row {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: -($gutter/ 2);
+    margin-right: -($gutter / 2);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 5px;
+
+    .links {
+        gap: 15px;
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            text-decoration: none;
+            color: $cor-primaria;
+            transition: color 0.3s, border-color 0.3s;
+
+            &:hover {
+                color: $cor-terciaria;
+
+            }
+        }
+    }
+}
+
+.jefferson {
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    .imagem-jefferson {
+
+        width: 180px;
+        border-radius: 50%;
+        border: 2px solid $cor-primaria;
+    }
+}
+
+.formulario {
+
+
+    form {
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .form-grupo {
+            display: flex;
+            align-items: center;
+        }
+
+        label {
+            width: 90px;
+            font-weight: 600;
+        }
+
+        input {
+            width: 60%;
+            border-radius: 3px;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 90%;
+            padding: 10px;
+            background-color: $cor-primaria;
+            color: $cor-neutra;
+            border-radius: 6px;
+            text-align: center; 
+
+            &:hover{
+
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.cards-pai{
+    background-color:$cor-fundo ;
+}
+
+.card-producao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 200px;
+    height: 400px;
+    box-sizing: border-box;
+    padding: 10px;
+
+    text-align: center;
+
+    img {
+        width: 100%;
+        height: 100px;
+
+    }
+
+    p {
+        flex-grow: 1;
+    }
+
+    .botao-card {
+
+        background-color: $cor-primaria;
+        color: $cor-neutra;
+        border-radius: 5px;
+        padding: 10px;
+        text-decoration: none;
+    }
+}
+
+.botao-donwload {
+    background-color: $cor-primaria;
+    color: $cor-neutra;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    width: 30%;
+}
+
+
+.curriculo-jefferson {
+
+
+    .botao-lattes {
+        padding: 10px;
+        background-color: $cor-primaria;
+        color: $cor-neutra;
+        text-decoration: none;
+        border-radius: 6px;
+        text-align: center;
+
+
+    }
+
+
+}
